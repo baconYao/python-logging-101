@@ -4,8 +4,8 @@ console = logging.StreamHandler()
 file_handler = logging.FileHandler("file.log")
 logging.basicConfig(
     level=logging.DEBUG,
-    format="%(levelname)-8s - %(module)-10s: %(funcName)s %(lineno)-4d - "
-    + "%(message)s",
+    format="%(levelname)-8s - %(name)s - %(module)-10s: %(funcName)s "
+    + "%(lineno)-4d - %(message)s",
     handlers=[console, file_handler],
 )
 
