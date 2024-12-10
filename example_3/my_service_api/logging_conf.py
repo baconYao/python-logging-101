@@ -9,7 +9,6 @@ def configure_logging() -> None:
             "formatters": {
                 "console": {
                     "class": "logging.Formatter",
-                    "datefmt": "%Y-%m-%dT%H:%M:%S",
                     "format": "%(levelname)-8s - %(name)s - %(module)-10s:"
                     + " %(funcName)s %(lineno)-4d - %(message)s",
                 },
